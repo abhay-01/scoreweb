@@ -11,6 +11,8 @@ import SignUp from "./screens/SignUp";
 import Home from "./screens/Home";
 import ConnectAccounts from "./screens/ConnectAccounts";
 import ViewMetrics from "./screens/ViewMetrics";
+import Terms from "./screens/Terms";
+import Privacy from "./screens/Privacy";
 
 const App = () => {
   // Using useNavigate inside the App component is not necessary in this context.
@@ -23,6 +25,8 @@ const App = () => {
       <Route path="/home" element={<Home />} />
       <Route path ="/connect-accounts" element={<ConnectAccounts/>}/>
       <Route path = "metrics-display" element={<ViewMetrics/>}/>
+      <Route path = "/terms" element={<Terms/>}/>
+      <Route path = "/privacy" element={<Privacy/>}/>
       <Route path="/" element={<SignIn />} />
     </Routes>
   );
