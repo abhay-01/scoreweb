@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebaseconfig';
 import "../styles/SignIn.css";
@@ -39,12 +39,13 @@ const SignIn = () => {
         <button className="signInButton" onClick={handleSignIn}>
           Sign In
         </button>
-        <p
-          className="signupText"
-          onClick={() => navigate('/signup')}
-        >
+        <p className="signupText" onClick={() => navigate('/signup')}>
           Don't have an account? Sign Up
         </p>
+        <div className="links">
+          <Link to="/terms" className="link">Terms of Service</Link>
+          <Link to="/privacy" className="link">Privacy Policy</Link>
+        </div>
       </div>
     </div>
   );

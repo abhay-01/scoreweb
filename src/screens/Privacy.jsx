@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Privacy = () => {
   return (
     <div style={styles.container}>
-        <Link to="/home" style={styles.link}>Back to Home</Link>
+        <Link to="/" style={styles.link}>Back to Home</Link>
       <div style={styles.card}>
         <h1 style={styles.title}>Privacy Policy</h1>
         <p style={styles.text}>

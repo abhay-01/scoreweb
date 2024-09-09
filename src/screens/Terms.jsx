@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Terms = () => {
   return (
     <div style={styles.container}>
-                <Link to="/home" style={styles.link}>Back to Home</Link>
+                <Link to="/" style={styles.link}>Back to Home</Link>
 
       <div style={styles.card}>
         <h1 style={styles.title}>Terms of Service</h1>
